@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0is-b9-ZO2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailViewController-->
+        <scene sceneID="dAs-DO-CO3">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="0is-b9-ZO2" customClass="DetailViewController" customModule="swf_CustomTransition_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3V-RZ-GUo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-6M-GrR">
+                                <rect key="frame" x="0.0" y="224" width="375" height="218"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-gz-DMQ">
+                                <rect key="frame" x="164" y="545" width="46" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="0is-b9-ZO2" eventType="touchUpInside" id="4v8-Qv-fSO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HLj-SN-qXN" firstAttribute="bottom" secondItem="zfL-6M-GrR" secondAttribute="bottom" constant="225" id="3Vj-w3-jvl"/>
+                            <constraint firstItem="1Ez-gz-DMQ" firstAttribute="centerX" secondItem="O3V-RZ-GUo" secondAttribute="centerX" id="3s6-jH-ZcM"/>
+                            <constraint firstItem="zfL-6M-GrR" firstAttribute="top" secondItem="HLj-SN-qXN" secondAttribute="top" constant="204" id="6jP-Gj-DU8"/>
+                            <constraint firstItem="zfL-6M-GrR" firstAttribute="trailing" secondItem="HLj-SN-qXN" secondAttribute="trailing" id="KUL-c2-ghP"/>
+                            <constraint firstItem="HLj-SN-qXN" firstAttribute="bottom" secondItem="1Ez-gz-DMQ" secondAttribute="bottom" constant="92" id="OxW-yb-Hju"/>
+                            <constraint firstItem="1Ez-gz-DMQ" firstAttribute="top" secondItem="zfL-6M-GrR" secondAttribute="bottom" constant="103" id="ZCk-8R-LRP"/>
+                            <constraint firstItem="zfL-6M-GrR" firstAttribute="leading" secondItem="HLj-SN-qXN" secondAttribute="leading" id="tGD-gQ-cBP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HLj-SN-qXN"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="zfL-6M-GrR" id="ezp-qA-DD7"/>
+                        <outlet property="dismissButton" destination="1Ez-gz-DMQ" id="uBp-ok-6x7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVn-YY-sjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>
