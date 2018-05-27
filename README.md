@@ -1,0 +1,2 @@
+# swf-CuctomTransitionNavi-demo
+Navigationの画面遷移をカスタムしたサンプル
